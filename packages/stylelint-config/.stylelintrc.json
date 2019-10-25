@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json.schemastore.org/stylelintrc",
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-css-modules",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "selector-pseudo-element-colon-notation": "single"
+  }
+}

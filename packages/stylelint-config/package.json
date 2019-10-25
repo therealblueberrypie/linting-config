@@ -1,0 +1,44 @@
+{
+  "name": "@blueberrypie/stylelint-config",
+  "description": "Shared configuration for Stylelint",
+  "license": "MIT",
+  "version": "1.0.0",
+  "files": [
+    ".stylelintrc.json"
+  ],
+  "main": ".stylelintrc.json",
+  "prettier": "@blueberrypie/prettier-config",
+  "release-it": {
+    "git": {
+      "tagName": "v%s"
+    },
+    "hooks": {
+      "before:init": [
+        "npm test"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:therealblueberrypie/linting-config.git"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "peerDependencies": {
+    "stylelint": ">=10.1",
+    "prettier": ">=1.18.2"
+  },
+  "dependencies": {
+    "stylelint-config-css-modules": "^1.5.0",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-prettier": "^1.1.1"
+  },
+  "devDependencies": {
+    "@blueberrypie/prettier-config": "^1.0.5",
+    "prettier": "^1.18.2",
+    "release-it": "^12.4.2",
+    "stylelint": "^11.0.0"
+  }
+}

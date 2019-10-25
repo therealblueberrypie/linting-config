@@ -1,0 +1,33 @@
+{
+  "name": "@blueberrypie/editor-config",
+  "description": "Shared editor configuration",
+  "license": "MIT",
+  "version": "1.0.0",
+  "files": [
+    ".editorconfig",
+    "copy.js"
+  ],
+  "main": ".editorconfig",
+  "prettier": "@blueberrypie/prettier-config",
+  "release-it": {
+    "git": {
+      "tagName": "v%s"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:therealblueberrypie/linting-config.git"
+  },
+  "scripts": {
+    "postinstall": "node ./copy.js",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "gently-copy": "^3.2.0"
+  },
+  "devDependencies": {
+    "@blueberrypie/prettier-config": "^1.0.5",
+    "prettier": "^1.18.2",
+    "release-it": "^12.4.2"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "chai-friendly",
+    "cypress",
+    "json",
+    "prettier"
+  ],
+  "extends": [
+    "react-app",
+    "plugin:cypress/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/no-inferrable-types": [
+      "warn",
+      {
+        "ignoreParameters": true,
+        "ignoreProperties": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.*"],
+      "rules": {
+        "cypress/assertion-before-screenshot": "warn",
+        "no-unused-expressions": "off",
+        "chai-friendly/no-unused-expressions": "error"
+      }
+    }
+  ]
+}

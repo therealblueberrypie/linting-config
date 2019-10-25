@@ -1,0 +1,55 @@
+{
+	"name": "@blueberrypie/eslint-config",
+	"description": "Shared configuration for Stylelint",
+	"license": "MIT",
+	"version": "1.0.0",
+	"files": [
+		".eslintrc.json"
+	],
+	"main": ".eslintrc.json",
+	"prettier": "@blueberrypie/prettier-config",
+	"release-it": {
+		"git": {
+			"tagName": "v%s"
+		},
+		"hooks": {
+			"before:init": [
+				"npm test"
+			]
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:therealblueberrypie/linting-config.git"
+	},
+	"scripts": {
+		"release": "release-it"
+	},
+	"peerDependencies": {
+		"eslint": ">=5.16",
+		"typescript": ">=3.4"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^2.3.2",
+		"@typescript-eslint/parser": "^2.3.2",
+		"babel-eslint": "^10.0.3",
+		"eslint-config-prettier": "^6.3.0",
+		"eslint-config-react-app": "^5.0.2",
+		"eslint-plugin-chai-friendly": "^0.4.1",
+		"eslint-plugin-cypress": "^2.7.0",
+		"eslint-plugin-flowtype": "^3.13.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-json": "^1.4.0",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-prettier": "^3.1.1",
+		"eslint-plugin-react": "^7.15.1",
+		"eslint-plugin-react-hooks": "^1.7.0"
+	},
+	"devDependencies": {
+		"@blueberrypie/prettier-config": "^1.0.5",
+		"eslint": "^6.5.1",
+		"prettier": "^1.18.2",
+		"release-it": "^12.4.2",
+		"typescript": "^3.6.3"
+	}
+}
