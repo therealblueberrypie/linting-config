@@ -1,9 +1,0 @@
-{
-  "scripts": {
-    "cloc": "cloc packages --exclude-dir node_modules,dist,build"
-  },
-  "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ]
-}
