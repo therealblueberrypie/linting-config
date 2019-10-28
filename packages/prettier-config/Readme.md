@@ -1,5 +1,7 @@
 # @blueberrypie/prettier-config
 
+[![NpmVersion](https://img.shields.io/npm/v/@blueberrypie/prettier-config.svg)](https://www.npmjs.com/package/@blueberrypie/prettier-config)
+
 ## Installation
 
 1. Install:

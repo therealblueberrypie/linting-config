@@ -1,5 +1,7 @@
 # @blueberrypie/eslint-config
 
+[![NpmVersion](https://img.shields.io/npm/v/@blueberrypie/eslint-config.svg)](https://www.npmjs.com/package/@blueberrypie/eslint-config)
+
 ## Installation
 
 1. Install:

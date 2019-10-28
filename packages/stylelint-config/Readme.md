@@ -1,5 +1,7 @@
 # @blueberrypie/stylelint-config
 
+[![NpmVersion](https://img.shields.io/npm/v/@blueberrypie/stylelint-config.svg)](https://www.npmjs.com/package/@blueberrypie/stylelint-config)
+
 ## Installation
 
 1. Install:
