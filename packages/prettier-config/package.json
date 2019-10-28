@@ -1,35 +1,24 @@
 {
-  "name": "@blueberrypie/prettier-config",
-  "description": "Shared configuration for Prettier",
-  "license": "MIT",
-  "version": "1.0.0",
-  "files": [
-    "index.json"
-  ],
-  "main": "index.json",
-  "prettier": "./index.json",
-  "release-it": {
-    "git": {
-      "tagName": "v%s"
-    },
-    "hooks": {
-      "before:init": [
-        "npm test"
-      ]
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:therealblueberrypie/linting-config.git"
-  },
-  "scripts": {
-    "release": "release-it"
-  },
-  "peerDependencies": {
-    "prettier": ">=1.18.2"
-  },
-  "devDependencies": {
-    "prettier": "^1.18.2",
-    "release-it": "^12.4.2"
-  }
+	"name": "@blueberrypie/prettier-config",
+	"description": "Shared configuration for Prettier",
+	"license": "MIT",
+	"version": "1.0.0",
+	"files": [
+		"index.json"
+	],
+	"main": "index.json",
+	"prettier": "./index.json",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:therealblueberrypie/linting-config.git"
+	},
+	"scripts": {
+		"release": "release-it"
+	},
+	"peerDependencies": {
+		"prettier": ">=1.18.2"
+	},
+	"devDependencies": {
+		"prettier": "^1.18.2"
+	}
 }

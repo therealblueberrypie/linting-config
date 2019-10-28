@@ -8,22 +8,9 @@
 	],
 	"main": ".eslintrc.json",
 	"prettier": "@blueberrypie/prettier-config",
-	"release-it": {
-		"git": {
-			"tagName": "v%s"
-		},
-		"hooks": {
-			"before:init": [
-				"npm test"
-			]
-		}
-	},
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:therealblueberrypie/linting-config.git"
-	},
-	"scripts": {
-		"release": "release-it"
 	},
 	"peerDependencies": {
 		"eslint": ">=5.16",
@@ -49,7 +36,6 @@
 		"@blueberrypie/prettier-config": "^1.0.5",
 		"eslint": "^6.5.1",
 		"prettier": "^1.18.2",
-		"release-it": "^12.4.2",
 		"typescript": "^3.6.3"
 	}
 }
