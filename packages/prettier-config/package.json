@@ -12,9 +12,6 @@
 		"type": "git",
 		"url": "git@github.com:therealblueberrypie/linting-config.git"
 	},
-	"scripts": {
-		"release": "release-it"
-	},
 	"peerDependencies": {
 		"prettier": ">=1.18.2"
 	},
