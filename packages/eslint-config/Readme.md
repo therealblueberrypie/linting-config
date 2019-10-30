@@ -18,7 +18,7 @@ npm install --save-dev eslint @blueberrypie/eslint-config
     "fix:scripts": "eslint --ignore-path .lintignore --cache --fix \"**/*.{ts,tsx,js,jsx,json}\"",
     "lint:scripts": "eslint --ignore-path .lintignore --max-warnings 0 --cache \"**/*.{ts,tsx,js,jsx,json}\""
   },
-  "eslint": {
+  "eslintConfig": {
     "extends": "@blueberrypie/eslint-config",
     "parserOptions": {
       "project": "./tsconfig.json"
